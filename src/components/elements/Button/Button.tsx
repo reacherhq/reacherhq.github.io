@@ -46,7 +46,8 @@ export function Button(props: ButtonProps): React.ReactElement {
         `border border-${color} rounded-full`,
         getPadding(size),
         'font-normal text-xs uppercase',
-        'hover:opacity-50'
+        'hover:opacity-50',
+        'disabled:opacity-75'
       )}
       {...rest}
     >
