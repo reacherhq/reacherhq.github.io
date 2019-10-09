@@ -1,0 +1,39 @@
+{
+  "name": "reacher-landing",
+  "version": "0.1.0",
+  "author": "Amaury Martiny <amaury.martiny@protonmail.com>",
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "license": "GPL-3.0",
+  "private": true,
+  "repository": "https://github.com/amaurymartiny/reacher-landing",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "yarn run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "dependencies": {
+    "@types/react-helmet": "^5.0.11",
+    "gatsby": "^2.15.28",
+    "gatsby-plugin-postcss": "^2.1.10",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-typescript": "^2.1.11",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0",
+    "react-helmet": "^5.2.1",
+    "tailwindcss": "^1.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  }
+}

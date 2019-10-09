@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #393b3b;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.rounded-xl {
+  border-radius: 50px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.w-800 {
+  width: 800px;
+}
