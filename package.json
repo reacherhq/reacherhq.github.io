@@ -16,7 +16,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/react-helmet": "^5.0.11",
+    "classnames": "^2.2.6",
     "gatsby": "^2.15.28",
     "gatsby-plugin-postcss": "^2.1.10",
     "gatsby-plugin-react-helmet": "^3.1.10",

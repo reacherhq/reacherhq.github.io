@@ -1,9 +1,11 @@
+import * as classNames from 'classnames';
 import * as React from 'react';
 
 type ButtonPriority = 'primary' | 'secondary';
 type ButtonSize = 'medium';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  full?: boolean;
   priority?: ButtonPriority;
   size?: ButtonSize;
 }
@@ -28,20 +30,24 @@ export function Button(props: ButtonProps): React.ReactElement {
   const {
     children,
     className,
+    full,
     priority = 'primary',
     size = 'medium',
     ...rest
   } = props;
 
+  const color = getColor(priority);
+
   return (
     <button
-      className={`
-        ${className}
-        border border-${getColor(priority)} rounded-full
-        ${getPadding(size)}
-        font-medium text-${getColor(priority)} text-xs uppercase
-        hover:opacity-50
-      `}
+      className={classNames(
+        className,
+        full ? `bg-${color} text-white` : `text-${color}`,
+        `border border-${color} rounded-full`,
+        getPadding(size),
+        'font-normal text-xs uppercase',
+        'hover:opacity-50'
+      )}
       {...rest}
     >
       {children}

@@ -1,9 +1,12 @@
+import * as classNames from 'classnames';
 import * as React from 'react';
 
-interface ItemProps {
-  text: string;
-}
+type ItemProps = React.HTMLAttributes<HTMLDivElement>;
 
-export function NavItem({ text }: ItemProps): React.ReactElement {
-  return <span className="mx-6">{text}</span>;
+export function NavItem(props: ItemProps): React.ReactElement {
+  const { className, children } = props;
+
+  return (
+    <div className={classNames('mx-4 my-auto', className)}>{children}</div>
+  );
 }
