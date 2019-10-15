@@ -1,3 +1,4 @@
+export * from './CompareTable';
 export * from './Hero';
 export * from './Navigation';
 export * from './Footer';

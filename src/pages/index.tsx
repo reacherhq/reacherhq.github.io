@@ -8,6 +8,7 @@ import accurateImage from '../assets/images/undraw_mail_sent.png';
 import assistantImage from '../assets/images/undraw_virtual_assistant.png';
 import {
   Button,
+  CompareTable,
   Footer,
   Hero,
   Line,
@@ -25,7 +26,7 @@ export default function Index(): React.ReactElement {
     <>
       <Seo />
       <Navigation />
-      <section className="container px-12 m-auto mt-24">
+      <section className="container m-auto mt-24">
         <Hero />
       </section>
       <section className="container px-12 m-auto mt-48 flex flex-row justify-center">
@@ -131,7 +132,10 @@ export default function Index(): React.ReactElement {
           ></Card.Content>
         </Card>
       </section>
-      <Footer />
+      <section className="container mx-auto mt-48">
+        <CompareTable />
+      </section>
+      <Footer className="mt-48" />
     </>
   );
 }
