@@ -1,15 +1,23 @@
 import * as classNames from 'classnames';
 import * as React from 'react';
 
-import { CardContent } from './Content';
+import { CardContent, CardContentSize } from './Content';
+import styles from './Card.module.css';
 
-export type CardProps = React.HTMLAttributes<HTMLDivElement>;
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
+  size?: CardContentSize;
+}
 
 export function Card(props: CardProps): React.ReactElement {
-  const { children, className, ...rest } = props;
+  const { children, className, size, ...rest } = props;
   return (
     <div
-      className={classNames('rounded-xl shadow-2xl', 'bg-white', className)}
+      className={classNames(
+        'rounded-xl shadow-2xl',
+        'bg-white',
+        styles[`${size}Width`],
+        className
+      )}
       {...rest}
     >
       {children}

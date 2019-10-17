@@ -2,11 +2,11 @@ import * as classNames from 'classnames';
 import * as React from 'react';
 import { Check as CheckIcon, HelpCircle, X as XIcon } from 'react-feather';
 
-import emaillistverifyImage from '../../../assets/images/competitors/emaillistverify-logo-black.png';
-import thecheckerImage from '../../../assets/images/competitors/thechecker-logo.png';
-import xverifyImage from '../../../assets/images/competitors/xverify.png';
-import zerobounceImage from '../../../assets/images/competitors/zerobounce.png';
-import { Card } from '../../views';
+import emaillistverifyImage from '../../../../assets/images/competitors/emaillistverify-logo-black.png';
+import thecheckerImage from '../../../../assets/images/competitors/thechecker-logo.png';
+import xverifyImage from '../../../../assets/images/competitors/xverify.png';
+import zerobounceImage from '../../../../assets/images/competitors/zerobounce.png';
+import { Card } from '../../../views';
 import styles from './CompareTable.module.css';
 
 export type CompareTableProps = React.HTMLAttributes<HTMLDivElement>;

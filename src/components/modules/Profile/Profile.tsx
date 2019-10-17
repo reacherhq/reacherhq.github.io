@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Auth0User, Auth0Value } from '../../../../context/Auth0Context';
+import { Auth0User, Auth0Value } from '../../../context/Auth0Context';
 
 interface UserDropdownProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Auth0User;
@@ -11,12 +11,12 @@ function UserDropdown(props: UserDropdownProps): React.ReactElement {
 
   return (
     <div className="flex flex-row items-center" {...rest}>
+      Hi, {user.name}!
       <img
         alt={user.name}
-        className="mr-2 rounded-full w-8"
+        className="ml-2 rounded-full w-8"
         src={user.picture}
       ></img>
-      {user.name}
     </div>
   );
 }

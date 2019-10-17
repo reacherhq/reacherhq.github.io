@@ -2,7 +2,7 @@ import * as classNames from 'classnames';
 import * as React from 'react';
 import { useState } from 'react';
 
-import { Card, CardProps } from '../../views';
+import { Card, CardProps } from '../../../views';
 import styles from './Hero.module.css';
 import { EmailResult, HeroChecking } from './Checking';
 import { HeroNormal } from './Normal';

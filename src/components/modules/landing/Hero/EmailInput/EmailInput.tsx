@@ -2,7 +2,7 @@ import * as classNames from 'classnames';
 import * as React from 'react';
 import { useState } from 'react';
 
-import { Button } from '../../../elements';
+import { Button } from '../../../../elements';
 
 interface EmailInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   onSubmitEmail: (email: string) => void;

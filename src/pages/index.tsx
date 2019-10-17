@@ -36,7 +36,7 @@ export default function Index(): React.ReactElement {
       </section>
       <section className="container px-12 mx-auto py-48">
         <div className="flex flex-row justify-center">
-          <Card className="mr-20">
+          <Card className="mr-20" size="medium">
             <Card.Content
               button={<Button priority="secondary">Upload your list</Button>}
               description="Say goodbye to invalid email and hard bounces! Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
@@ -48,7 +48,7 @@ export default function Index(): React.ReactElement {
               image={bulkImage}
             ></Card.Content>
           </Card>
-          <Card className="ml-20">
+          <Card className="ml-20" size="medium">
             <Card.Content
               button={<Button priority="secondary">Get your API key</Button>}
               description="Add our Real-Time Verification technology on your website by just copying one line of code. It takes only a few seconds and requires no technical skills."

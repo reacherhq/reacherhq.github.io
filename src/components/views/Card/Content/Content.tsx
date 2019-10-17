@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import styles from './Content.module.css';
 
-type CardContentSize = 'small' | 'medium' | number;
+export type CardContentSize = 'small' | 'medium' | 'big';
 
 interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {
   button?: React.ReactElement;
@@ -18,24 +18,24 @@ function getPadding(size?: CardContentSize): string {
     case 'small':
       return 'px-8 py-16';
     case 'medium':
+    case 'big':
       return 'p-16';
     default:
       return '';
   }
 }
 
-function getSpacingBetween(size?: CardContentSize): string {
+function getSpacingBetween(size: CardContentSize): string {
   switch (size) {
     case 'small':
       return 'mt-8';
     case 'medium':
+    case 'big':
       return 'mt-10';
-    default:
-      return '';
   }
 }
 
-function getTextPadding(size?: CardContentSize): string {
+function getTextPadding(size: CardContentSize): string {
   switch (size) {
     case 'small':
       return 'px-6';
@@ -57,14 +57,7 @@ export function CardContent(props: CardContentProps): React.ReactElement {
   } = props;
 
   return (
-    <div
-      className={classNames(
-        getPadding(size),
-        styles[`${size}Width`],
-        className
-      )}
-      {...rest}
-    >
+    <div className={classNames(getPadding(size), className)} {...rest}>
       {header && <h3 className="text-center text-xl font-medium">{header}</h3>}
       {image && (
         <img

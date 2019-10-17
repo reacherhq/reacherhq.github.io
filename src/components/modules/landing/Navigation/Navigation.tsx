@@ -1,10 +1,9 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
 
-import { Auth0Value } from '../../../context/Auth0Context';
-import { Button, Line } from '../../elements';
-import { NavItem } from './NavItem';
-import { Profile } from './Profile';
+import { Auth0Value } from '../../../../context/Auth0Context';
+import { Button, Line, NavItem } from '../../../elements';
+import { Profile } from '../../Profile';
 
 interface NavigationProps {
   auth0: Auth0Value;
@@ -12,6 +11,7 @@ interface NavigationProps {
 
 export function Navigation(props: NavigationProps): React.ReactElement {
   const { auth0 } = props;
+  const { isAuthenticated } = auth0;
 
   return (
     <div className="px-12 py-3 flex flex-row justify-between">
@@ -29,7 +29,13 @@ export function Navigation(props: NavigationProps): React.ReactElement {
         <NavItem>
           <Profile auth0={auth0} />
         </NavItem>
-        <Button className="w-48">Try for free</Button>
+        {isAuthenticated ? (
+          <Link to="/dashboard/bulk">
+            <Button className="w-48">Go to Dashboard</Button>
+          </Link>
+        ) : (
+          <Button className="w-48">Try for free</Button>
+        )}
       </div>
     </div>
   );

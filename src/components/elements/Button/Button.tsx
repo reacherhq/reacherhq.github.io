@@ -22,7 +22,7 @@ function getColor(priority: ButtonPriority): string {
 function getPadding(size: ButtonSize): string {
   switch (size) {
     case 'medium':
-      return 'px-10 py-3';
+      return 'px-8 py-3';
   }
 }
 
