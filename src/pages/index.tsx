@@ -17,16 +17,19 @@ import {
   Seo,
   Card
 } from '../components';
+import { useAuth0 } from '../context/Auth0Context';
 
 function LineBetweenValues(): React.ReactElement {
   return <Line className="mt-20 h-8" />;
 }
 
 export default function Index(): React.ReactElement {
+  const auth0 = useAuth0();
+
   return (
     <>
       <Seo />
-      <Navigation />
+      <Navigation auth0={auth0} />
       <EmailLine />
       <section className="container mx-auto my-24">
         <Hero className="z-10" />

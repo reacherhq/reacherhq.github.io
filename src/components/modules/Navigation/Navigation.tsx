@@ -1,10 +1,18 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
 
+import { Auth0Value } from '../../../context/Auth0Context';
 import { Button, Line } from '../../elements';
 import { NavItem } from './NavItem';
+import { Profile } from './Profile';
 
-export function Navigation(): React.ReactElement {
+interface NavigationProps {
+  auth0: Auth0Value;
+}
+
+export function Navigation(props: NavigationProps): React.ReactElement {
+  const { auth0 } = props;
+
   return (
     <div className="px-12 py-3 flex flex-row justify-between">
       <div className="flex items-center">
@@ -18,7 +26,9 @@ export function Navigation(): React.ReactElement {
           <NavItem>Pricing</NavItem>
         </Link>
         <Line className="h-6 my-auto" />
-        <NavItem>Sign In</NavItem>
+        <NavItem>
+          <Profile auth0={auth0} />
+        </NavItem>
         <Button className="w-48">Try for free</Button>
       </div>
     </div>
