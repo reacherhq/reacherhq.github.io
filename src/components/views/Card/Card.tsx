@@ -8,7 +8,10 @@ export type CardProps = React.HTMLAttributes<HTMLDivElement>;
 export function Card(props: CardProps): React.ReactElement {
   const { children, className, ...rest } = props;
   return (
-    <div className={classNames('rounded-xl shadow-2xl', className)} {...rest}>
+    <div
+      className={classNames('rounded-xl shadow-2xl', 'bg-white', className)}
+      {...rest}
+    >
       {children}
     </div>
   );

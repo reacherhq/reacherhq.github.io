@@ -9,7 +9,7 @@ import zerobounceImage from '../../../assets/images/competitors/zerobounce.png';
 import { Card } from '../../views';
 import styles from './CompareTable.module.css';
 
-export type CompareTableProps = React.HTMLAttributes<HTMLTableElement>;
+export type CompareTableProps = React.HTMLAttributes<HTMLDivElement>;
 
 interface Checks {
   catchAll: boolean;
@@ -126,7 +126,7 @@ function showCellContent(
 
 export function CompareTable(props: CompareTableProps): React.ReactElement {
   return (
-    <div className="relative mx-auto">
+    <div className="relative mx-auto" {...props}>
       <table className="text-sm">
         <thead>
           <tr className="h-20">
@@ -162,7 +162,7 @@ export function CompareTable(props: CompareTableProps): React.ReactElement {
               className="border-t border-lightgray first:border-t-0 h-16"
               key={check}
             >
-              <td className="opacity-75 font-normal uppercase">
+              <td className="text-gray font-normal uppercase">
                 <div className="flex flex-row items-center">
                   <HelpCircle className="mr-4" size={16} />
                   <div>{checksDescriptions[check]}</div>

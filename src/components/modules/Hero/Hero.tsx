@@ -32,7 +32,7 @@ export function Hero(props: HeroProps): React.ReactElement {
   }
 
   return (
-    <Card className={classNames(styles.width, 'p-16', className)} {...rest}>
+    <Card className={classNames(styles.hero, 'p-16', className)} {...rest}>
       {email ? (
         <HeroChecking
           email={email}

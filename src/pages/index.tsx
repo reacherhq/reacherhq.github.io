@@ -1,14 +1,15 @@
 import * as React from 'react';
 
-import bulkImage from '../assets/images/undraw_to_do_list.png';
-import apiImage from '../assets/images/undraw_code_review.png';
-import gdprImage from '../assets/images/undraw_gdpr.png';
-import cheaperImage from '../assets/images/undraw_make_it_rain.png';
-import accurateImage from '../assets/images/undraw_mail_sent.png';
-import assistantImage from '../assets/images/undraw_virtual_assistant.png';
+import accurateImage from '../assets/images/undraw_mail_sent.svg';
+import apiImage from '../assets/images/undraw_code_review.svg';
+import assistantImage from '../assets/images/undraw_virtual_assistant.svg';
+import bulkImage from '../assets/images/undraw_to_do_list.svg';
+import cheaperImage from '../assets/images/undraw_make_it_rain.svg';
+import gdprImage from '../assets/images/undraw_gdpr.svg';
 import {
   Button,
   CompareTable,
+  EmailLine,
   Footer,
   Hero,
   Line,
@@ -26,36 +27,39 @@ export default function Index(): React.ReactElement {
     <>
       <Seo />
       <Navigation />
-      <section className="container m-auto mt-24">
-        <Hero />
+      <EmailLine />
+      <section className="container mx-auto my-24">
+        <Hero className="z-10" />
       </section>
-      <section className="container px-12 m-auto mt-48 flex flex-row justify-center">
-        <Card className="mr-20">
-          <Card.Content
-            button={<Button priority="secondary">Upload your list</Button>}
-            description="Say goodbye to invalid email and hard bounces! Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
-            header={
-              <span>
-                <strong>Bulk</strong> Verification
-              </span>
-            }
-            image={bulkImage}
-          ></Card.Content>
-        </Card>
-        <Card className="ml-20">
-          <Card.Content
-            button={<Button priority="secondary">Get your API key</Button>}
-            description="Add our Real-Time Verification technology on your website by just copying one line of code. It takes only a few seconds and requires no technical skills."
-            header={
-              <span>
-                <strong>API</strong> for Developers
-              </span>
-            }
-            image={apiImage}
-          ></Card.Content>
-        </Card>
+      <section className="container px-12 mx-auto py-48">
+        <div className="flex flex-row justify-center">
+          <Card className="mr-20">
+            <Card.Content
+              button={<Button priority="secondary">Upload your list</Button>}
+              description="Say goodbye to invalid email and hard bounces! Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
+              header={
+                <span>
+                  <strong>Bulk</strong> Verification
+                </span>
+              }
+              image={bulkImage}
+            ></Card.Content>
+          </Card>
+          <Card className="ml-20">
+            <Card.Content
+              button={<Button priority="secondary">Get your API key</Button>}
+              description="Add our Real-Time Verification technology on your website by just copying one line of code. It takes only a few seconds and requires no technical skills."
+              header={
+                <span>
+                  <strong>API</strong> for Developers
+                </span>
+              }
+              image={apiImage}
+            ></Card.Content>
+          </Card>
+        </div>
       </section>
-      <section className="container px-16 m-auto mt-48 flex flex-row justify-around">
+      <section className="container px-16 mx-auto py-48">
         <Card className="px-8 flex flex-row justify-around">
           <Card.Content
             description={
@@ -132,10 +136,10 @@ export default function Index(): React.ReactElement {
           ></Card.Content>
         </Card>
       </section>
-      <section className="container mx-auto mt-48">
+      <section className="container mx-auto py-48">
         <CompareTable />
       </section>
-      <Footer className="mt-48" />
+      <Footer className="mt-24 pt-64" />
     </>
   );
 }

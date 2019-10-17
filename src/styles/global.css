@@ -16,6 +16,7 @@ body {
 
 a:hover {
   @apply opacity-50;
+  cursor: pointer;
 }
 
 .rounded-xl {
