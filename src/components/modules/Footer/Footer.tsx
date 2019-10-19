@@ -1,6 +1,6 @@
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import { Link } from 'gatsby';
-import * as React from 'react';
+import React from 'react';
 
 import mailboxImage from '../../../assets/images/undraw_mail_box.svg';
 import { FooterColumn, FooterColumnItem } from './Column';

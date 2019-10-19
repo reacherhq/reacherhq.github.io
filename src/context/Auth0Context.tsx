@@ -1,7 +1,6 @@
 import createAuth0Client from '@auth0/auth0-spa-js';
 import Auth0Client from '@auth0/auth0-spa-js/dist/typings/Auth0Client';
-import * as React from 'react';
-import { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type AppState = any;

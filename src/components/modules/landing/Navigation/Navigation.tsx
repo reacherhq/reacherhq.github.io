@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import * as React from 'react';
+import React from 'react';
 
 import { Auth0Value } from '../../../../context/Auth0Context';
 import { Button, Line, NavItem } from '../../../elements';

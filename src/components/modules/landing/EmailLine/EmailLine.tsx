@@ -1,5 +1,5 @@
-import * as classNames from 'classnames';
-import * as React from 'react';
+import classNames from 'classnames';
+import React from 'react';
 
 import emailLineImage from '../../../../assets/images/email_line.svg';
 import styles from './EmailLine.module.css';

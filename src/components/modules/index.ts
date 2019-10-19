@@ -1,4 +1,5 @@
 export * from './Footer';
+export * from './PrivateRoute';
 export * from './Profile';
 export * from './Seo';
 

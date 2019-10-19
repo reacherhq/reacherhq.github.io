@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Auth0User, Auth0Value } from '../../../context/Auth0Context';
 

@@ -1,8 +1,15 @@
-import { useEffect } from 'react';
-import * as React from 'react';
+import { Router } from '@reach/router';
+import React, { useEffect } from 'react';
 
-import { BulkInput, Card, DashNavigation, Footer, Seo } from '../../components';
-import { useAuth0 } from '../../context/Auth0Context';
+import {
+  BulkInput,
+  Card,
+  DashNavigation,
+  Footer,
+  PrivateRoute,
+  Seo
+} from '../components';
+import { useAuth0 } from '../context/Auth0Context';
 
 export default function Bulk(): React.ReactElement {
   const auth0 = useAuth0();
@@ -41,7 +48,13 @@ export default function Bulk(): React.ReactElement {
       <section className="container mx-auto mt-4">
         <Card className="mx-auto" size="big">
           <Card.Content size="medium">
-            <BulkInput />
+            <Router>
+              <PrivateRoute
+                auth0={auth0}
+                path="/dashboard/bulk"
+                component={BulkInput}
+              />
+            </Router>
           </Card.Content>
         </Card>
       </section>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import accurateImage from '../assets/images/undraw_mail_sent.svg';
 import apiImage from '../assets/images/undraw_code_review.svg';

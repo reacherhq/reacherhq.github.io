@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { Footer, Navigation, Seo } from '../components';
 import { useAuth0 } from '../context/Auth0Context';

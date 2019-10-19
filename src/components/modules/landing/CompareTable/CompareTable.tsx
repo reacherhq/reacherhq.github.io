@@ -1,5 +1,5 @@
-import * as classNames from 'classnames';
-import * as React from 'react';
+import classNames from 'classnames';
+import React from 'react';
 import { Check as CheckIcon, HelpCircle, X as XIcon } from 'react-feather';
 
 import emaillistverifyImage from '../../../../assets/images/competitors/emaillistverify-logo-black.png';
