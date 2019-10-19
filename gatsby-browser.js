@@ -5,8 +5,9 @@ import './src/styles/global.css';
 // eslint-disable-next-line
 export const wrapRootElement = ({ element }) => (
   <Auth0Provider
-    domain={process.env.GATSBY_AUTH0_DOMAIN}
+    audience={process.env.GATSBY_AUTH0_API_IDENTIFIER}
     client_id={process.env.GATSBY_AUTH0_CLIENT_ID}
+    domain={process.env.GATSBY_AUTH0_DOMAIN}
     redirect_uri={window.location.origin}
   >
     {element}
