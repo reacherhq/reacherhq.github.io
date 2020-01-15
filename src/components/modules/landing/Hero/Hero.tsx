@@ -2,8 +2,8 @@ import classNames from 'classnames';
 import React, { useState } from 'react';
 
 import { Card, CardProps } from '../../../views';
-import styles from './Hero.module.css';
 import { EmailResult, HeroChecking } from './Checking';
+import styles from './Hero.module.css';
 import { HeroNormal } from './Normal';
 
 type HeroProps = CardProps;

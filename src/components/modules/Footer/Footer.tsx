@@ -31,7 +31,7 @@ export function Footer(props: FooterProps): React.ReactElement {
           <p>© 2019 REACHER. All Rights Reserved.</p>
         </div>
         <FooterColumn header="Product">
-          <a onClick={console.log}>
+          <a>
             <FooterColumnItem>Overview</FooterColumnItem>
           </a>
 

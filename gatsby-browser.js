@@ -1,6 +1,8 @@
-import React from 'react';
-import { Auth0Provider } from './src/context/Auth0Context';
 import './src/styles/global.css';
+
+import React from 'react';
+
+import { Auth0Provider } from './src/context/Auth0Context';
 
 // eslint-disable-next-line
 export const wrapRootElement = ({ element }) => (

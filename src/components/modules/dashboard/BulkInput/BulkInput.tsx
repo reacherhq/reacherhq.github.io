@@ -1,8 +1,13 @@
+import { Link } from 'gatsby';
 import React, { useState } from 'react';
 
-import { Input, Line, Button } from '../../../elements';
+import { Button, Input, Line } from '../../../elements';
 
-export function BulkInput(): React.ReactElement {
+interface BulkInputProps {
+  path: string;
+}
+
+export function BulkInput(_props: BulkInputProps): React.ReactElement {
   const [name, setName] = useState('');
   const [emails, setEmails] = useState('');
 
@@ -48,9 +53,11 @@ export function BulkInput(): React.ReactElement {
         </div>
       </div>
       <div className="mt-12 flex justify-center">
-        <Button className="w-48 uppercase" full>
-          Upload
-        </Button>
+        <Link state={{ name, emails }} to="/dashboard/bulk/new">
+          <Button className="w-48 uppercase" full>
+            Upload
+          </Button>
+        </Link>
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { CardContent, CardContentSize } from './Content';
 import styles from './Card.module.css';
+import { CardContent, CardContentSize } from './Content';
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: CardContentSize;

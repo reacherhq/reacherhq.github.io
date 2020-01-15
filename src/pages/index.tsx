@@ -1,21 +1,21 @@
 import React from 'react';
 
-import accurateImage from '../assets/images/undraw_mail_sent.svg';
 import apiImage from '../assets/images/undraw_code_review.svg';
-import assistantImage from '../assets/images/undraw_virtual_assistant.svg';
-import bulkImage from '../assets/images/undraw_to_do_list.svg';
-import cheaperImage from '../assets/images/undraw_make_it_rain.svg';
 import gdprImage from '../assets/images/undraw_gdpr.svg';
+import accurateImage from '../assets/images/undraw_mail_sent.svg';
+import cheaperImage from '../assets/images/undraw_make_it_rain.svg';
+import bulkImage from '../assets/images/undraw_to_do_list.svg';
+import assistantImage from '../assets/images/undraw_virtual_assistant.svg';
 import {
   Button,
+  Card,
   CompareTable,
   EmailLine,
   Footer,
   Hero,
   Line,
   Navigation,
-  Seo,
-  Card
+  Seo
 } from '../components';
 import { useAuth0 } from '../context/Auth0Context';
 
