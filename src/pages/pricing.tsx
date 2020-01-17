@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Footer, Navigation, Seo } from '../components';
-import { useAuth0 } from '../context/Auth0Context';
+import { Auth0Value } from '../context/Auth0Context';
 
 export default function Index(): React.ReactElement {
-  const auth0 = useAuth0();
+  const auth0 = { isAuthenticated: false } as Auth0Value;
 
   return (
     <>

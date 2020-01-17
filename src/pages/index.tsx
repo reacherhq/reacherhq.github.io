@@ -17,20 +17,20 @@ import {
   Navigation,
   Seo
 } from '../components';
-import { useAuth0 } from '../context/Auth0Context';
+import { Auth0Value } from '../context/Auth0Context';
 
 function LineBetweenValues(): React.ReactElement {
   return <Line className="mt-20 h-8" />;
 }
 
 export default function Index(): React.ReactElement {
-  const auth0 = useAuth0();
+  const auth0 = { isAuthenticated: false } as Auth0Value;
 
   return (
     <>
       <Seo />
       <Navigation auth0={auth0} />
-      <EmailLine />
+      <EmailLine className="-mx-2" />
       <section className="container mx-auto my-24">
         <Hero className="z-10" />
       </section>
