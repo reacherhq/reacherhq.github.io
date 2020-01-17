@@ -9,6 +9,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "lint": "tsc --noEmit && eslint . --ext ts,tsx",
     "start": "gatsby develop",
     "serve": "gatsby serve",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@amaurymartiny/config": "^1.0.10",
+    "gh-pages": "^2.2.0",
     "typescript": "^3.7.4"
   }
 }
