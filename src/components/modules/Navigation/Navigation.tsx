@@ -32,7 +32,13 @@ export function Navigation(props: NavigationProps): React.ReactElement {
             <Button className="px-12">Go to Dashboard</Button>
           </Link>
         ) : (
-          <Button className="px-12">Try for free</Button>
+          <a
+            href="https://mailchi.mp/12f6e32e376d/reacher"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className="px-12">Try for free</Button>
+          </a>
         )}
       </div>
     </div>

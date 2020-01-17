@@ -23,8 +23,8 @@ export function Footer(props: FooterProps): React.ReactElement {
             Reacher is an open-source, accurate, fast and affordable service
             that helps you to get rid of email bounces and increase your ROI.
           </p>
-          <p className="mt-4 w-64 text-xs text-lightgray">
-            © 2019 REACHER. All Rights Reserved.
+          <p className="mt-4 w-64 text-xs text-gray">
+            © 2019-2020 REACHER. All Rights Reserved.
           </p>
         </div>
         <img
@@ -40,6 +40,15 @@ export function Footer(props: FooterProps): React.ReactElement {
         </FooterColumn>
         <FooterColumn header="Company">
           <FooterColumnItem>About Us</FooterColumnItem>
+          <FooterColumnItem>
+            <a
+              href="https://github.com/amaurymartiny/check-if-email-exists"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
+          </FooterColumnItem>
         </FooterColumn>
         <FooterColumn header="Legal">
           <FooterColumnItem>Contact</FooterColumnItem>

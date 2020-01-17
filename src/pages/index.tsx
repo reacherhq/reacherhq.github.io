@@ -39,7 +39,17 @@ export default function Index(): React.ReactElement {
         <div className="flex flex-row justify-center" id="services">
           <Card className="mr-20" size="medium">
             <Card.Content
-              button={<Button priority="secondary">Upload your list</Button>}
+              button={
+                <a
+                  href="https://mailchi.mp/12f6e32e376d/reacher"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button className="w-full" priority="secondary">
+                    Upload your list
+                  </Button>
+                </a>
+              }
               description="Say goodbye to invalid email and hard bounces! Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
               header={
                 <span>
@@ -51,7 +61,17 @@ export default function Index(): React.ReactElement {
           </Card>
           <Card className="ml-20" size="medium">
             <Card.Content
-              button={<Button priority="secondary">Get your API key</Button>}
+              button={
+                <a
+                  href="https://mailchi.mp/12f6e32e376d/reacher"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <Button className="w-full" priority="secondary">
+                    Get your API key
+                  </Button>
+                </a>
+              }
               description="Add our Real-Time Verification technology on your website by just copying one line of code. It takes only a few seconds and requires no technical skills."
               header={
                 <span>
