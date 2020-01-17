@@ -1,9 +1,8 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-import { Auth0Value } from '../../../../context/Auth0Context';
-import { Button, Line, NavItem } from '../../../elements';
-import { Profile } from '../../Profile';
+import { Auth0Value } from '../../../context/Auth0Context';
+import { Button, NavItem } from '../../elements';
 
 interface NavigationProps {
   auth0: Auth0Value;
@@ -22,19 +21,15 @@ export function Navigation(props: NavigationProps): React.ReactElement {
         <NavItem>What We Check</NavItem>
       </div>
       <div className="flex items-center">
-        <Link to="/pricing">
+        <Link className="mr-2" to="/pricing">
           <NavItem>Pricing</NavItem>
         </Link>
-        <Line className="h-6 my-auto" />
-        <NavItem>
-          <Profile auth0={auth0} />
-        </NavItem>
         {isAuthenticated ? (
           <Link to="/dashboard/bulk">
-            <Button className="w-48">Go to Dashboard</Button>
+            <Button className="px-12">Go to Dashboard</Button>
           </Link>
         ) : (
-          <Button className="w-48">Try for free</Button>
+          <Button className="px-12">Try for free</Button>
         )}
       </div>
     </div>

@@ -16,7 +16,7 @@ interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {
 function getPadding(size?: CardContentSize): string {
   switch (size) {
     case 'small':
-      return 'px-8 py-16';
+      return 'px-6 py-16';
     case 'medium':
     case 'big':
       return 'p-16';
@@ -28,17 +28,15 @@ function getPadding(size?: CardContentSize): string {
 function getSpacingBetween(size: CardContentSize): string {
   switch (size) {
     case 'small':
-      return 'mt-8';
+      return 'mt-10';
     case 'medium':
     case 'big':
-      return 'mt-10';
+      return 'mt-12';
   }
 }
 
 function getTextPadding(size: CardContentSize): string {
   switch (size) {
-    case 'small':
-      return 'px-6';
     default:
       return '';
   }

@@ -7,7 +7,7 @@ export function NavItem(props: ItemProps): React.ReactElement {
   const { className, children, ...rest } = props;
 
   return (
-    <div className={classNames('mx-4', className)} {...rest}>
+    <div className={classNames('mx-3', 'text-sm', className)} {...rest}>
       {children}
     </div>
   );
