@@ -4,6 +4,7 @@ import { Footer, Navigation, Seo } from '../components';
 import { Auth0Value } from '../context/Auth0Context';
 
 export default function Index(): React.ReactElement {
+  // TODO Unimplemented for now, mocking auth0 object
   const auth0 = { isAuthenticated: false } as Auth0Value;
 
   return (

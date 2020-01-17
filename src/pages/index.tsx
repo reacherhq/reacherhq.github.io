@@ -24,6 +24,7 @@ function LineBetweenValues(): React.ReactElement {
 }
 
 export default function Index(): React.ReactElement {
+  // TODO Unimplemented for now, mocking auth0 object
   const auth0 = { isAuthenticated: false } as Auth0Value;
 
   return (
@@ -35,7 +36,7 @@ export default function Index(): React.ReactElement {
         <Hero className="z-10" />
       </section>
       <section className="container mx-auto px-12 py-48">
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center" id="services">
           <Card className="mr-20" size="medium">
             <Card.Content
               button={<Button priority="secondary">Upload your list</Button>}
@@ -63,7 +64,7 @@ export default function Index(): React.ReactElement {
         </div>
       </section>
       <section className="container mx-auto px-12 py-48">
-        <Card className="px-8 py-6 flex flex-row justify-around">
+        <Card className="px-8 py-6 flex flex-row justify-around" id="values">
           <Card.Content
             className="flex-1"
             description={
@@ -144,7 +145,7 @@ export default function Index(): React.ReactElement {
         </Card>
       </section>
       <section className="container mx-auto px-4 py-48">
-        <CompareTable />
+        <CompareTable id="what-we-check" />
       </section>
       <Footer className="mt-24 px-12 pt-24" />
     </>

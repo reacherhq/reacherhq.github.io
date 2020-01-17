@@ -16,9 +16,15 @@ export function Navigation(props: NavigationProps): React.ReactElement {
     <div className="px-12 py-3 flex flex-row justify-between">
       <div className="flex items-center">
         <div className="mr-4 font-big text-4xl">R</div>
-        <NavItem>Services</NavItem>
-        <NavItem>Our Values</NavItem>
-        <NavItem>What We Check</NavItem>
+        <Link to="/#services">
+          <NavItem>Services</NavItem>
+        </Link>
+        <Link to="/#values">
+          <NavItem>Our Values</NavItem>
+        </Link>
+        <Link to="/#what-we-check">
+          <NavItem>What We Check</NavItem>
+        </Link>
       </div>
       <div className="flex items-center">
         <Link className="mr-2" to="/pricing">

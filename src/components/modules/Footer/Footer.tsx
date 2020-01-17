@@ -34,9 +34,9 @@ export function Footer(props: FooterProps): React.ReactElement {
         />
         <div className="px-40 w-64"></div>
         <FooterColumn header="Product">
-          <a>
+          <Link to="/">
             <FooterColumnItem>Overview</FooterColumnItem>
-          </a>
+          </Link>
           <Link to="/pricing">
             <FooterColumnItem>Pricing</FooterColumnItem>
           </Link>
@@ -48,7 +48,9 @@ export function Footer(props: FooterProps): React.ReactElement {
           <FooterColumnItem>Contact</FooterColumnItem>
         </FooterColumn>
         <FooterColumn header="Help &amp; Contact">
-          <FooterColumnItem>Email Us</FooterColumnItem>
+          <FooterColumnItem>
+            <a href="mailto:hello@reacher.com">Email Us</a>
+          </FooterColumnItem>
         </FooterColumn>
       </div>
     </footer>
