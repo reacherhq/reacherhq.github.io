@@ -35,10 +35,7 @@ export function Footer(props: FooterProps): React.ReactElement {
         <div className="px-40 w-64"></div>
         <FooterColumn header="Product">
           <Link to="/">
-            <FooterColumnItem>Overview</FooterColumnItem>
-          </Link>
-          <Link to="/pricing">
-            <FooterColumnItem>Pricing</FooterColumnItem>
+            <FooterColumnItem>Homepage</FooterColumnItem>
           </Link>
         </FooterColumn>
         <FooterColumn header="Company">

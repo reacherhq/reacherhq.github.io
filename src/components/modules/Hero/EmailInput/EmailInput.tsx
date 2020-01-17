@@ -4,13 +4,22 @@ import React, { useState } from 'react';
 import { Button } from '../../../elements';
 
 interface EmailInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  buttonText?: string;
+  initialValue?: string;
   onSubmitEmail: (email: string) => void;
 }
 
 export function EmailInput(props: EmailInputProps): React.ReactElement {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const { className, disabled, onSubmitEmail, value, ...rest } = props;
-  const [email, setEmail] = useState('');
+  const {
+    buttonText = 'Test an email',
+    className,
+    disabled,
+    initialValue = '',
+    onSubmitEmail,
+    value,
+    ...rest
+  } = props;
+  const [email, setEmail] = useState(initialValue);
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>): void {
     setEmail(event.target.value);
@@ -25,19 +34,19 @@ export function EmailInput(props: EmailInputProps): React.ReactElement {
   return (
     <form onSubmit={handleSubmit}>
       <div
-        className="
-            border border-purple rounded-full
-            flex items-center
-          "
+        className={classNames(
+          'border border-purple rounded-full',
+          'flex items-center',
+          disabled && 'opacity-75'
+        )}
       >
         <input
           className={classNames(
-            className,
             'ml-8 mt-3 mb-3',
             'border-none w-full',
             'bg-white',
             'text-xs',
-            'disabled:opacity-75'
+            className
           )}
           disabled={disabled}
           onChange={handleChange}
@@ -46,7 +55,7 @@ export function EmailInput(props: EmailInputProps): React.ReactElement {
           {...rest}
         ></input>
         <Button disabled={disabled} className="h-full w-64 uppercase" full>
-          Test an email
+          {buttonText}
         </Button>
       </div>
     </form>

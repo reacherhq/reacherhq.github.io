@@ -22,7 +22,7 @@ function getColor(priority: ButtonPriority): string {
 function getPadding(size: ButtonSize): string {
   switch (size) {
     case 'medium':
-      return 'px-6 py-3';
+      return 'px-8 py-4';
   }
 }
 
@@ -30,6 +30,7 @@ export function Button(props: ButtonProps): React.ReactElement {
   const {
     children,
     className,
+    disabled,
     full,
     priority = 'primary',
     size = 'medium',
@@ -47,8 +48,9 @@ export function Button(props: ButtonProps): React.ReactElement {
         getPadding(size),
         'font-normal text-xs uppercase',
         'hover:opacity-50',
-        'disabled:opacity-75'
+        disabled && 'cursor-not-allowed opacity-75 hover:opacity-75'
       )}
+      disabled={disabled}
       {...rest}
     >
       {children}

@@ -8,6 +8,9 @@ import { HeroNormal } from './Normal';
 
 type HeroProps = CardProps;
 
+const BACKEND_URL =
+  'https://3nbyey1wsi.execute-api.us-east-1.amazonaws.com/dev';
+
 export function Hero(props: HeroProps): React.ReactElement {
   const { className, ...rest } = props;
   const [email, setEmail] = useState<string>();
@@ -20,10 +23,10 @@ export function Hero(props: HeroProps): React.ReactElement {
       return;
     }
 
+    setResult(undefined);
+
     try {
-      const response = await fetch(
-        `https://y78n51qcpj.execute-api.us-east-1.amazonaws.com/dev?to_email=${email}`
-      );
+      const response = await fetch(`${BACKEND_URL}?to_email=${email}`);
       setResult({ ok: await response.json() });
     } catch (error) {
       setResult({ error: error.toString() });

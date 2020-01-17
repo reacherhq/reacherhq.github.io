@@ -27,9 +27,6 @@ export function Navigation(props: NavigationProps): React.ReactElement {
         </Link>
       </div>
       <div className="flex items-center">
-        <Link className="mr-2" to="/pricing">
-          <NavItem>Pricing</NavItem>
-        </Link>
         {isAuthenticated ? (
           <Link to="/dashboard/bulk">
             <Button className="px-12">Go to Dashboard</Button>
