@@ -33,7 +33,7 @@ interface HeroCheckingProps {
 
 function renderJSON(result: EmailResult): React.ReactElement {
   return (
-    <pre className="mt-2 whitespace-pre-wrap">
+    <pre className="mt-2 whitespace-pre-wrap text-xs">
       {JSON.stringify(result.ok || result, null, 2)}
     </pre>
   );
