@@ -164,10 +164,10 @@ export default function Index(): React.ReactElement {
           ></Card.Content>
         </Card>
       </section>
-      <section className="container mx-auto px-4 py-48">
+      <section className="container mx-auto px-12 py-48">
         <CompareTable id="what-we-check" />
       </section>
-      <Footer className="mt-24 px-12 pt-24" />
+      <Footer className="mt-24 px-12" />
     </>
   );
 }

@@ -4,7 +4,6 @@ import React from 'react';
 
 import mailboxImage from '../../../assets/images/undraw_mail_box.svg';
 import { FooterColumn, FooterColumnItem } from './Column';
-import styles from './Footer.module.css';
 
 type FooterProps = React.HTMLAttributes<HTMLDivElement>;
 
@@ -13,10 +12,10 @@ export function Footer(props: FooterProps): React.ReactElement {
 
   return (
     <footer
-      className={classNames('container mx-auto pb-24', 'relative', className)}
+      className={classNames('container mx-auto', 'relative', className)}
       {...rest}
     >
-      <div className="flex flex-row justify-between">
+      <div className="h-64 flex flex-row justify-between items-start">
         <div>
           <h4 className="uppercase">Reacher</h4>
           <p className="mt-4 w-64 text-xs">
@@ -27,12 +26,8 @@ export function Footer(props: FooterProps): React.ReactElement {
             © 2019-2020 REACHER. All Rights Reserved.
           </p>
         </div>
-        <img
-          alt="mailbox"
-          className={classNames(styles.mailbox, 'absolute bottom-0')}
-          src={mailboxImage}
-        />
-        <div className="px-40 w-64"></div>
+
+        <img alt="mailbox" className="px-24 self-end" src={mailboxImage} />
         <FooterColumn header="Product">
           <Link to="/">
             <FooterColumnItem>Homepage</FooterColumnItem>
