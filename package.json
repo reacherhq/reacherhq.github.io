@@ -31,7 +31,7 @@
     "tailwindcss": "^1.1.4"
   },
   "devDependencies": {
-    "@amaurymartiny/config": "^1.0.10",
+    "@amaurymartiny/config": "^1.0.11",
     "gh-pages": "^2.2.0",
     "typescript": "^3.7.4"
   }
