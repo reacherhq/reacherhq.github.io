@@ -37,7 +37,7 @@ export function Footer(props: FooterProps): React.ReactElement {
           <FooterColumnItem>About Us</FooterColumnItem>
           <FooterColumnItem>
             <a
-              href="https://github.com/amaurymartiny/check-if-email-exists"
+              href="https://github.com/reacherhq"
               rel="noopener noreferrer"
               target="_blank"
             >
