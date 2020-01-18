@@ -1,5 +1,4 @@
 .line {
   left: 37.5%;
   top: 15rem;
-  z-index: -1; /* z-index seems to not work with position: absolute; */
 }

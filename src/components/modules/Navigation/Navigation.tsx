@@ -15,7 +15,9 @@ export function Navigation(props: NavigationProps): React.ReactElement {
   return (
     <div className="px-12 py-3 flex flex-row justify-between">
       <div className="flex items-center">
-        <div className="mr-4 font-big text-4xl">R</div>
+        <Link className="mr-4 font-big text-4xl" to="/">
+          R
+        </Link>
         <Link to="/#services">
           <NavItem>Services</NavItem>
         </Link>
