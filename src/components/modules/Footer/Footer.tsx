@@ -50,7 +50,17 @@ export function Footer(props: FooterProps): React.ReactElement {
         </FooterColumn>
         <FooterColumn header="Help &amp; Contact">
           <FooterColumnItem>
-            <a href="mailto:hello@reacher.com">Email Us</a>
+            <a
+              onClick={(): void =>
+                window.location.replace(
+                  // Not sure if that helps from bots scraping JS code to find
+                  // email addresses, but worth a try
+                  'mailto:' + 'amaury.martiny' + '@' + 'protonmail' + '.com'
+                )
+              }
+            >
+              Email us
+            </a>
           </FooterColumnItem>
         </FooterColumn>
       </div>
