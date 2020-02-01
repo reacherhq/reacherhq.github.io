@@ -20,7 +20,7 @@
     "@types/classnames": "^2.2.9",
     "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
-    "gatsby": "^2.18.25",
+    "gatsby": "^2.19.10",
     "gatsby-plugin-postcss": "^2.1.19",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-typescript": "^2.1.26",
