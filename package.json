@@ -1,11 +1,11 @@
 {
-  "name": "reacher-landing",
+  "name": "@reacherhq/landing",
   "version": "0.1.0",
   "author": "Amaury Martiny <amaury.martiny@protonmail.com>",
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "license": "GPL-3.0",
   "private": true,
-  "repository": "https://github.com/amaurymartiny/reacher-landing",
+  "repository": "https://github.com/reacherhq/reacherhq.github.io",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",

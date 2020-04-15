@@ -1,3 +1,19 @@
+// Reacher
+// Copyright (C) 2018-2020 Amaury Martiny
+
+// Reacher is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// Reacher is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with Reacher.  If not, see <http://www.gnu.org/licenses/>.
+
 import classNames from 'classnames';
 import React from 'react';
 import { Check as CheckIcon, HelpCircle, X as XIcon } from 'react-feather';
@@ -36,7 +52,7 @@ const checksDescriptions: Record<keyof Checks, string> = {
   price10k: 'Price 10k',
   price100k: 'Price 100k',
   syntax: 'Email Address Syntax Check',
-  turnaround100k: 'Turnaround Time for 100k',
+  turnaround100k: 'Turnaround Time for 100k'
 };
 
 const data: EmailService[] = [
@@ -49,10 +65,10 @@ const data: EmailService[] = [
       price10k: '$10',
       price100k: '$100',
       syntax: true,
-      turnaround100k: '2h',
+      turnaround100k: '2h'
     },
     image: xverifyImage, // Dummy image
-    name: 'reacher',
+    name: 'reacher'
   },
   {
     checks: {
@@ -63,10 +79,10 @@ const data: EmailService[] = [
       price10k: '$10',
       price100k: '$100',
       syntax: true,
-      turnaround100k: '2h',
+      turnaround100k: '2h'
     },
     image: xverifyImage,
-    name: 'xverify',
+    name: 'xverify'
   },
   {
     checks: {
@@ -77,10 +93,10 @@ const data: EmailService[] = [
       price10k: '$10',
       price100k: '$100',
       syntax: true,
-      turnaround100k: '2h',
+      turnaround100k: '2h'
     },
     image: emaillistverifyImage,
-    name: 'emaillistverify',
+    name: 'emaillistverify'
   },
   {
     checks: {
@@ -91,10 +107,10 @@ const data: EmailService[] = [
       price10k: '$10',
       price100k: '$100',
       syntax: true,
-      turnaround100k: '2h',
+      turnaround100k: '2h'
     },
     image: thecheckerImage,
-    name: 'thechecker',
+    name: 'thechecker'
   },
   {
     checks: {
@@ -105,11 +121,11 @@ const data: EmailService[] = [
       price10k: '$10',
       price100k: '$100',
       syntax: true,
-      turnaround100k: '2h',
+      turnaround100k: '2h'
     },
     image: zerobounceImage,
-    name: 'zerobounce',
-  },
+    name: 'zerobounce'
+  }
 ];
 
 function showCellContent(
@@ -131,7 +147,7 @@ export function CompareTable(props: CompareTableProps): React.ReactElement {
         <thead>
           <tr className="h-20">
             <th className={styles.firstColumn}></th>
-            {data.map((service) => (
+            {data.map(service => (
               <th
                 className={classNames(styles.serviceColumn)}
                 key={`${service.name}-header`}
@@ -156,8 +172,8 @@ export function CompareTable(props: CompareTableProps): React.ReactElement {
             'catchAll',
             'turnaround100k',
             'price10k',
-            'price100k',
-          ] as (keyof Checks)[]).map((check) => (
+            'price100k'
+          ] as (keyof Checks)[]).map(check => (
             <tr
               className="border-t border-lightgray first:border-t-0 h-16"
               key={check}
@@ -168,7 +184,7 @@ export function CompareTable(props: CompareTableProps): React.ReactElement {
                   <div>{checksDescriptions[check]}</div>
                 </div>
               </td>
-              {data.map((service) => (
+              {data.map(service => (
                 <td
                   className="justify-center text-center z-20"
                   key={`${service.name}-${check}`}
@@ -200,8 +216,8 @@ export function CompareTable(props: CompareTableProps): React.ReactElement {
           'catchAll',
           'turnaround100k',
           'price10k',
-          'price100k',
-        ] as (keyof Checks)[]).map((check) => (
+          'price100k'
+        ] as (keyof Checks)[]).map(check => (
           <div
             className={classNames(
               'h-16',
