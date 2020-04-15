@@ -22,6 +22,7 @@
     "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
     "gatsby": "^2.20.22",
+    "gatsby-plugin-crisp-chat": "^3.2.2",
     "gatsby-plugin-postcss": "^2.2.1",
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-typescript": "^2.3.1",

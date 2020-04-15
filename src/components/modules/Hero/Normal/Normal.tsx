@@ -61,7 +61,7 @@ export function HeroNormal({
             </span>
           }
         >
-          <span className="dotted-underline">100% correct results</span>
+          <span className="underline">100% correct results</span>
         </Tooltip>
         .
       </h2>
