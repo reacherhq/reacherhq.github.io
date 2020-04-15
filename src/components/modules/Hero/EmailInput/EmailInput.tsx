@@ -44,7 +44,7 @@ export function EmailInput(props: EmailInputProps): React.ReactElement {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
 
-    onSubmitEmail && onSubmitEmail(email);
+    email && onSubmitEmail(email);
   }
 
   return (
@@ -67,6 +67,7 @@ export function EmailInput(props: EmailInputProps): React.ReactElement {
           disabled={disabled}
           onChange={handleChange}
           placeholder="EMAIL"
+          required
           value={value || email}
           {...rest}
         ></input>
