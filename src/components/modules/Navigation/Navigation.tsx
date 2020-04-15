@@ -18,6 +18,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import { Auth0Value } from '../../../context/Auth0Context';
+import { NEWSLETTER_SIGNUP_URL } from '../../../util/constants';
 import { Button, NavItem } from '../../elements';
 
 interface NavigationProps {
@@ -52,7 +53,7 @@ export function Navigation(props: NavigationProps): React.ReactElement {
           </Link>
         ) : (
           <a
-            href="https://mailchi.mp/12f6e32e376d/reacher"
+            href={NEWSLETTER_SIGNUP_URL}
             rel="noopener noreferrer"
             target="_blank"
           >

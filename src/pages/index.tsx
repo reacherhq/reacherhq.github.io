@@ -34,6 +34,7 @@ import {
   Seo,
 } from '../components';
 import { Auth0Value } from '../context/Auth0Context';
+import { NEWSLETTER_SIGNUP_URL } from '../util/constants';
 
 function LineBetweenValues(): React.ReactElement {
   return <Line className="mt-20 h-8" />;
@@ -57,7 +58,7 @@ export default function Index(): React.ReactElement {
             <Card.Content
               button={
                 <a
-                  href="https://mailchi.mp/12f6e32e376d/reacher"
+                  href={NEWSLETTER_SIGNUP_URL}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -79,7 +80,7 @@ export default function Index(): React.ReactElement {
             <Card.Content
               button={
                 <a
-                  href="https://mailchi.mp/12f6e32e376d/reacher"
+                  href={NEWSLETTER_SIGNUP_URL}
                   rel="noopener noreferrer"
                   target="_blank"
                 >

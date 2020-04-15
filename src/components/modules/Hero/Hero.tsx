@@ -17,14 +17,13 @@
 import classNames from 'classnames';
 import React, { useState } from 'react';
 
+import { BACKEND_URL } from '../../../util/constants';
 import { Card, CardProps } from '../../views';
 import { EmailResult, HeroChecking } from './Checking';
 import styles from './Hero.module.css';
 import { HeroNormal } from './Normal';
 
 type HeroProps = CardProps;
-
-const BACKEND_URL = 'https://reacher.fly.dev/check_email';
 
 export function Hero(props: HeroProps): React.ReactElement {
   const { className, ...rest } = props;
