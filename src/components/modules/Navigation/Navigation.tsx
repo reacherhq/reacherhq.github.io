@@ -57,7 +57,7 @@ export function Navigation(props: NavigationProps): React.ReactElement {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button className="px-12">Try for free</Button>
+            <Button className="px-12">Get 50 credits for free</Button>
           </a>
         )}
       </div>

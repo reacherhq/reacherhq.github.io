@@ -40,3 +40,8 @@ a:hover {
 .rounded-xl {
   border-radius: 50px;
 }
+
+.dotted-underline {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}

@@ -35,7 +35,7 @@ export function Footer(props: FooterProps): React.ReactElement {
         <div>
           <h4 className="uppercase">Reacher</h4>
           <p className="mt-4 w-64 text-xs">
-            Reacher is an open-source, accurate, fast and affordable service
+            Reacher is an open-source, accurate, private and affordable service
             that helps you to get rid of email bounces and increase your ROI.
           </p>
           <p className="mt-4 w-64 text-xs text-gray">
@@ -44,12 +44,16 @@ export function Footer(props: FooterProps): React.ReactElement {
         </div>
 
         <img alt="mailbox" className="px-24 self-end" src={mailboxImage} />
-        <FooterColumn header="Product">
+
+        <FooterColumn header="Helpful links">
           <Link to="/">
             <FooterColumnItem>Homepage</FooterColumnItem>
+            <FooterColumnItem>Pricing</FooterColumnItem>
+            <FooterColumnItem>FAQ</FooterColumnItem>
           </Link>
         </FooterColumn>
-        <FooterColumn header="Company">
+
+        <FooterColumn header="Behind the scenes">
           <FooterColumnItem>About Us</FooterColumnItem>
           <FooterColumnItem>
             <a
@@ -57,13 +61,25 @@ export function Footer(props: FooterProps): React.ReactElement {
               rel="noopener noreferrer"
               target="_blank"
             >
+              Open-source email verifier
+            </a>
+          </FooterColumnItem>
+          <FooterColumnItem>
+            <a
+              href="https://github.com/reacherhq"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               Github
             </a>
           </FooterColumnItem>
         </FooterColumn>
-        <FooterColumn header="Legal">
-          <FooterColumnItem>Contact</FooterColumnItem>
+
+        <FooterColumn header="Legal Stuff">
+          <FooterColumnItem>Terms and conditions</FooterColumnItem>
+          <FooterColumnItem>Privacy policy</FooterColumnItem>
         </FooterColumn>
+
         <FooterColumn header="Help &amp; Contact">
           <FooterColumnItem>
             <a

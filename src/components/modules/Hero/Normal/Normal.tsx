@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Reacher.  If not, see <http://www.gnu.org/licenses/>.
 
+import Tooltip from 'rc-tooltip';
 import React from 'react';
 
 import { EmailInput } from '../EmailInput';
@@ -38,7 +39,31 @@ export function HeroNormal({
           <span className="text-purple">real-time</span>,{' '}
           <span className="text-yellow">open-source</span> email verification
         </strong>{' '}
-        doesn&apos;t collect any data and delivers 100% correct results.
+        doesn&apos;t collect any data and delivers{' '}
+        <Tooltip
+          placement="right"
+          trigger={['hover']}
+          overlay={
+            <span>
+              It&apos;s 100% accurate because it&apos;s real-time, we check here
+              and now.
+              <br />
+              We proxy the verifications via{' '}
+              <a
+                className="underline"
+                href="https://www.torproject.org/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Tor
+              </a>{' '}
+              to avoid being blacklisted.
+            </span>
+          }
+        >
+          <span className="dotted-underline">100% correct results</span>
+        </Tooltip>
+        .
       </h2>
       <EmailInput onSubmitEmail={onSubmitEmail} />
     </>

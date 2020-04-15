@@ -67,7 +67,7 @@ export default function Index(): React.ReactElement {
                   </Button>
                 </a>
               }
-              description="Say goodbye to invalid email and hard bounces! Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
+              description="Say goodbye to invalid email and hard bounces. Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
               header={
                 <span>
                   <strong>Bulk</strong> Verification
@@ -89,7 +89,7 @@ export default function Index(): React.ReactElement {
                   </Button>
                 </a>
               }
-              description="Add our Real-Time Verification technology on your website by just copying one line of code. It takes only a few seconds and requires no technical skills."
+              description="Verify email addresses on your website by just copying one line of code. It takes only a few minutes and requires no technical skills."
               header={
                 <span>
                   <strong>API</strong> for Developers
