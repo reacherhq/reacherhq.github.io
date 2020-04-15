@@ -177,7 +177,7 @@ export const Auth0Provider = ({
           }
 
           return auth0Client.logout(options);
-        }
+        },
       }}
     >
       {children}

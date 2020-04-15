@@ -15,7 +15,7 @@ import {
   Hero,
   Line,
   Navigation,
-  Seo
+  Seo,
 } from '../components';
 import { Auth0Value } from '../context/Auth0Context';
 

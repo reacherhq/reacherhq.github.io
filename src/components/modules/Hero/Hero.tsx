@@ -29,9 +29,9 @@ export function Hero(props: HeroProps): React.ReactElement {
         // eslint-disable-next-line @typescript-eslint/camelcase
         body: JSON.stringify({ to_email: email }),
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        method: 'POST'
+        method: 'POST',
       });
       setResult({ ok: await response.json() });
     } catch (error) {
