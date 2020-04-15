@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.6.5",
-    "@types/classnames": "^2.2.9",
+    "@types/classnames": "^2.2.10",
     "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.10",
