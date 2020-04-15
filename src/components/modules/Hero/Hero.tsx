@@ -8,8 +8,7 @@ import { HeroNormal } from './Normal';
 
 type HeroProps = CardProps;
 
-const BACKEND_URL =
-  'https://3nbyey1wsi.execute-api.us-east-1.amazonaws.com/dev';
+const BACKEND_URL = 'https://reacher.fly.dev/check_email';
 
 export function Hero(props: HeroProps): React.ReactElement {
   const { className, ...rest } = props;
@@ -26,7 +25,14 @@ export function Hero(props: HeroProps): React.ReactElement {
     setResult(undefined);
 
     try {
-      const response = await fetch(`${BACKEND_URL}?to_email=${email}`);
+      const response = await fetch(BACKEND_URL, {
+        // eslint-disable-next-line @typescript-eslint/camelcase
+        body: JSON.stringify({ to_email: email }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'POST'
+      });
       setResult({ ok: await response.json() });
     } catch (error) {
       setResult({ error: error.toString() });
