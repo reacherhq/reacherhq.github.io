@@ -8,10 +8,10 @@ module.exports = {
       purple: '#6c63ff',
       red: '#DA0F0F',
       yellow: '#ffcc80',
-      white: '#ffffff'
+      white: '#ffffff',
     },
     fontFamily: {
-      big: ['Gotham Bold']
-    }
-  }
+      big: ['Gotham Bold'],
+    },
+  },
 };

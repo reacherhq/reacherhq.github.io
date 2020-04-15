@@ -1,3 +1,19 @@
+// Reacher
+// Copyright (C) 2018-2020 Amaury Martiny
+
+// Reacher is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// Reacher is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with Reacher.  If not, see <http://www.gnu.org/licenses/>.
+
 import React from 'react';
 
 import apiImage from '../assets/images/undraw_code_review.svg';
@@ -15,9 +31,10 @@ import {
   Hero,
   Line,
   Navigation,
-  Seo
+  Seo,
 } from '../components';
 import { Auth0Value } from '../context/Auth0Context';
+import { NEWSLETTER_SIGNUP_URL } from '../util/constants';
 
 function LineBetweenValues(): React.ReactElement {
   return <Line className="mt-20 h-8" />;
@@ -41,7 +58,7 @@ export default function Index(): React.ReactElement {
             <Card.Content
               button={
                 <a
-                  href="https://mailchi.mp/12f6e32e376d/reacher"
+                  href={NEWSLETTER_SIGNUP_URL}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -50,7 +67,7 @@ export default function Index(): React.ReactElement {
                   </Button>
                 </a>
               }
-              description="Say goodbye to invalid email and hard bounces! Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
+              description="Say goodbye to invalid email and hard bounces. Create a free account and upload your list of email adresses. In a few seconds you will recieve your verification results!"
               header={
                 <span>
                   <strong>Bulk</strong> Verification
@@ -63,7 +80,7 @@ export default function Index(): React.ReactElement {
             <Card.Content
               button={
                 <a
-                  href="https://mailchi.mp/12f6e32e376d/reacher"
+                  href={NEWSLETTER_SIGNUP_URL}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -72,7 +89,7 @@ export default function Index(): React.ReactElement {
                   </Button>
                 </a>
               }
-              description="Add our Real-Time Verification technology on your website by just copying one line of code. It takes only a few seconds and requires no technical skills."
+              description="Verify email addresses on your website by just copying one line of code. It takes only a few minutes and requires no technical skills."
               header={
                 <span>
                   <strong>API</strong> for Developers

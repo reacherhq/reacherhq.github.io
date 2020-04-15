@@ -1,3 +1,3 @@
-# reacher-landing
+# @reacherhq/landing
 
 Reacher landing page

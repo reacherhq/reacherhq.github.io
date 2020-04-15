@@ -14,4 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with Reacher.  If not, see <http://www.gnu.org/licenses/>.
 
-export * from './EmailInput';
+/**
+ * URL of Reacher's backend.
+ */
+export const BACKEND_URL = 'https://reacher.fly.dev/check_email';
+
+/**
+ * Let users sign up to newsletter.
+ */
+export const NEWSLETTER_SIGNUP_URL = 'https://tinyletter.com/reacher';
