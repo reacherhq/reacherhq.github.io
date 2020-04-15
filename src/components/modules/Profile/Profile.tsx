@@ -43,7 +43,7 @@ export interface ProfileProps {
 
 export function Profile(props: ProfileProps): React.ReactElement {
   const {
-    auth0: { loading, loginWithRedirect, logout, user }
+    auth0: { loading, loginWithRedirect, logout, user },
   } = props;
 
   return (

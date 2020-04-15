@@ -23,7 +23,7 @@ interface HeroNormalProps {
 }
 
 export function HeroNormal({
-  onSubmitEmail
+  onSubmitEmail,
 }: HeroNormalProps): React.ReactElement {
   return (
     <>
