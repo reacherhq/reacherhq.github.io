@@ -23,7 +23,7 @@
     "classnames": "^2.2.6",
     "gatsby": "^2.20.22",
     "gatsby-plugin-crisp-chat": "^3.2.2",
-    "gatsby-plugin-postcss": "^2.2.1",
+    "gatsby-plugin-postcss": "^2.2.3",
     "gatsby-plugin-react-helmet": "^3.2.2",
     "gatsby-plugin-typescript": "^2.3.1",
     "rc-tooltip": "^4.0.3",
