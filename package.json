@@ -21,7 +21,7 @@
     "@types/react-dom": "^16.9.6",
     "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
-    "gatsby": "^2.20.26",
+    "gatsby": "^2.20.36",
     "gatsby-plugin-crisp-chat": "^3.2.2",
     "gatsby-plugin-postcss": "^2.2.3",
     "gatsby-plugin-react-helmet": "^3.2.4",
