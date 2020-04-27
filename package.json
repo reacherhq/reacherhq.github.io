@@ -24,7 +24,7 @@
     "gatsby": "^2.20.26",
     "gatsby-plugin-crisp-chat": "^3.2.2",
     "gatsby-plugin-postcss": "^2.2.3",
-    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-react-helmet": "^3.2.5",
     "gatsby-plugin-typescript": "^2.3.3",
     "rc-tooltip": "^4.0.3",
     "react": "^16.13.1",
