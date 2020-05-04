@@ -16,7 +16,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "@auth0/auth0-spa-js": "^1.6.5",
+    "@auth0/auth0-spa-js": "^1.8.0",
     "@types/classnames": "^2.2.10",
     "@types/react-dom": "^16.9.7",
     "@types/react-helmet": "^5.0.15",
