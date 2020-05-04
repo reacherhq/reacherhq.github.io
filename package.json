@@ -31,7 +31,7 @@
     "react-dom": "^16.13.1",
     "react-feather": "^2.0.8",
     "react-helmet": "^6.0.0",
-    "tailwindcss": "^1.3.5"
+    "tailwindcss": "^1.4.4"
   },
   "devDependencies": {
     "@amaurymartiny/config": "^1.1.0",
