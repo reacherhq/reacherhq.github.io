@@ -17,7 +17,8 @@
 /**
  * URL of Reacher's backend.
  */
-export const BACKEND_URL = 'https://reacher.fly.dev/check_email';
+export const BACKEND_URL =
+  'https://ssfy.sh/amaurymartiny/reacher@8e7410b4/check_email';
 
 /**
  * Let users sign up to newsletter.

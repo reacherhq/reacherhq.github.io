@@ -46,11 +46,11 @@ export function Footer(props: FooterProps): React.ReactElement {
         <img alt="mailbox" className="px-24 self-end" src={mailboxImage} />
 
         <FooterColumn header="Helpful links">
-          <Link to="/">
-            <FooterColumnItem>Homepage</FooterColumnItem>
-            <FooterColumnItem>Pricing</FooterColumnItem>
-            <FooterColumnItem>FAQ</FooterColumnItem>
-          </Link>
+          <FooterColumnItem>
+            <Link to="/">Homepage</Link>
+          </FooterColumnItem>
+          <FooterColumnItem>Pricing</FooterColumnItem>
+          <FooterColumnItem>FAQ</FooterColumnItem>
         </FooterColumn>
 
         <FooterColumn header="Behind the scenes">

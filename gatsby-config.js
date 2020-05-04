@@ -3,6 +3,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-simple-analytics',
     {
       resolve: 'gatsby-plugin-crisp-chat',
       options: {
