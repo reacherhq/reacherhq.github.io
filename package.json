@@ -18,20 +18,20 @@
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.6.5",
     "@types/classnames": "^2.2.10",
-    "@types/react-dom": "^16.9.6",
+    "@types/react-dom": "^16.9.7",
     "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
-    "gatsby": "^2.20.22",
+    "gatsby": "^2.21.10",
     "gatsby-plugin-crisp-chat": "^3.2.2",
-    "gatsby-plugin-postcss": "^2.2.1",
-    "gatsby-plugin-react-helmet": "^3.2.2",
-    "gatsby-plugin-typescript": "^2.3.1",
+    "gatsby-plugin-postcss": "^2.3.0",
+    "gatsby-plugin-react-helmet": "^3.3.0",
+    "gatsby-plugin-typescript": "^2.4.0",
     "rc-tooltip": "^4.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-feather": "^2.0.4",
-    "react-helmet": "^5.2.1",
-    "tailwindcss": "^1.2.0"
+    "react-feather": "^2.0.8",
+    "react-helmet": "^6.0.0",
+    "tailwindcss": "^1.4.4"
   },
   "devDependencies": {
     "@amaurymartiny/config": "^1.1.0",
