@@ -20,7 +20,7 @@ import { Check, HelpCircle, X as XIcon } from 'react-feather';
 
 import { EmailInput } from '../EmailInput';
 
-export interface EmailResult {
+export interface CheckEmailOutput {
   error?: string;
   /**
    * The OK response. This is only a subset of what
@@ -28,6 +28,7 @@ export interface EmailResult {
    */
   ok?: {
     mx: {
+      accepts_mail?: boolean;
       error?: object;
     };
     smtp: {
@@ -36,7 +37,7 @@ export interface EmailResult {
     };
     syntax: {
       error?: object;
-      valid_format?: boolean;
+      is_valid_syntax?: boolean;
     };
   };
 }
@@ -44,10 +45,10 @@ export interface EmailResult {
 interface HeroCheckingProps {
   email: string;
   onSubmitEmail: (email: string) => void;
-  result?: EmailResult;
+  result?: CheckEmailOutput;
 }
 
-function renderJSON(result: EmailResult): React.ReactElement {
+function renderJSON(result: CheckEmailOutput): React.ReactElement {
   return (
     <pre className="mt-2 whitespace-pre-wrap text-xs">
       {JSON.stringify(result.ok || result, null, 2)}
@@ -80,7 +81,7 @@ function renderResultItem(
   );
 }
 
-function renderResult(result: EmailResult): React.ReactElement {
+function renderResult(result: CheckEmailOutput): React.ReactElement {
   const isDeliverable = !!result.ok?.smtp.is_deliverable;
 
   return (
@@ -104,8 +105,8 @@ function renderResult(result: EmailResult): React.ReactElement {
           {isDeliverable ? 'Deliverable' : 'Undeliverable'} Email Address
         </div>
       </div>
-      {renderResultItem('Address Syntax', !!result.ok?.syntax.valid_format)}
-      {renderResultItem('Mail server status', !result.ok?.mx.error)}
+      {renderResultItem('Address Syntax', !!result.ok?.syntax.is_valid_syntax)}
+      {renderResultItem('Mail server status', !!result.ok?.mx.accepts_mail)}
       {renderResultItem('Email deliverability', isDeliverable)}
     </>
   );
@@ -113,7 +114,7 @@ function renderResult(result: EmailResult): React.ReactElement {
 
 function renderBody(
   email: string,
-  result: EmailResult | undefined,
+  result: CheckEmailOutput | undefined,
   showJSON: boolean,
   setShowJSON: (show: boolean) => void
 ): React.ReactElement {
