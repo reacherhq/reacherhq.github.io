@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@amaurymartiny/config": "^1.1.0",
+    "gatsby-plugin-simple-analytics": "^1.0.3",
     "gh-pages": "^2.2.0",
     "typescript": "^3.8.3"
   }

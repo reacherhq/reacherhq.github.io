@@ -5209,6 +5209,11 @@ gatsby-plugin-react-helmet@^3.3.0:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
+gatsby-plugin-simple-analytics@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-simple-analytics/-/gatsby-plugin-simple-analytics-1.0.3.tgz#8a051604c1f73cedf62ca4f8412bad2e396aaad2"
+  integrity sha512-CAKVfAlN8EbOoNThXeDwC4Neh7G8V7zTBzrdZpO0S1k60rcr0gXjI1V8QS5QJ5TYQ9yRTSjSXYhL4q3oM04jIg==
+
 gatsby-plugin-typescript@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.0.tgz#4ef561acb28ae980e96125f70ae06954fa5de646"
